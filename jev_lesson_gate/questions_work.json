@@ -1,0 +1,10 @@
+{
+ "discovered_in_work": {
+  "type": "noul",
+  "instructions": "In `work`, did the assistant discover something reusable — the cause or fix of a failure, a pitfall that cost it time, or a way of doing something that worked when the obvious way did not — that a future session doing similar work would need to know?",
+  "criteria": {
+   "true": "The work ran into something unexpected and found what caused it or what fixed it, or settled on a non-obvious method that would apply again on similar work",
+   "false": "The work carried out the requested steps without surprises, or what it learned only concerns this one task's files, data, numbers or results"
+  }
+ }
+}

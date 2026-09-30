@@ -1,0 +1,18 @@
+{
+ "corrects_assistant": {
+  "type": "noul",
+  "instructions": "In `user_said`, is the user correcting the assistant — how it worked, what it assumed, what it forgot, or how it behaved — in a way that should change how it works with this user from now on?",
+  "criteria": {
+   "true": "The user pushes back on the assistant's approach, assumption, tone or pace, or points out something it should already have known",
+   "false": "The user moves the current task along: gives the next instruction, asks a question, approves, or reacts to this one result"
+  }
+ },
+ "reveals_lasting_fact": {
+  "type": "noul",
+  "instructions": "In `user_said`, does the user reveal something lasting about themselves — their setup, their constraints, how they like to work, or what they are really after — that would still be true in a later, unrelated session?",
+  "criteria": {
+   "true": "The message states a durable fact or preference about the user or their environment, or their underlying goal",
+   "false": "Everything in the message is about this task only, or will stop being true soon (a temporary credit, a file just copied, a one-off request)"
+  }
+ }
+}
